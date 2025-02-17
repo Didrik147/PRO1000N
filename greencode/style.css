@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
-:root {
-    --overlay-color: #03a9f4;
-}
+/* Design is inspired on the following tutorial by Traversy Media: */
+/* https://www.youtube.com/watch?v=8MgpE2DTTKA */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .showcase {
@@ -83,10 +80,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--overlay-color);
     mix-blend-mode: overlay;
 }
-
 
 
 .text {
@@ -131,31 +126,6 @@
 
 .text a:hover {
     letter-spacing: 6px;
-}
-
-.social {
-    position: absolute;
-    bottom: 20px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social li {
-    list-style: none;
-}
-
-.social li a {
-    display: inline-block;
-    filter: invert(1);
-    margin-right: 20px;
-    transform: scale(0.5);
-    transition: 0.5s;
-}
-
-.social li a:hover {
-    transform: scale(0.5) translateY(-15px);
 }
 
 .menu {
