@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenCode</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenCode</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section class="showcase">
-        <header>
-            <h2 class="logo">GreenCode</h2>
-            <div class="toggle"></div>
-        </header>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="index.html">GC</a>
+      </div>
+      <ul class="">
+        <li><a href="#news">News</a></li>
+        <li><a href="#">Toolkits</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <img src="./assets/green-leaves.jpg" alt="Green leaves">
-
-        <div class="overlay"></div>
-
-        <div class="text">
-            <h2>Green Code</h2>
-            <h3>Initiative Website</h3>
-            <p>This website serves as an educational and inspirational
-              platform for building energy-efficient, environmentally friendly, and socially responsible software
-              systems.</p>
-
-            <a href="#">Lean More</a>
-
-        </div>
-    </section>
-
-    <div class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Quiz</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="text-box bg-white text-center">
+      <h1 class="text-green-dark text-5xl">GreenCode</h1>
+      <p>Discover how we make software development sustainable</p>
     </div>
+    
+  </section>
 
+  <main>
+    <!-- News -->
+    <section id="news" class="text-center">
+      <h1 class="text-4xl text-center">News</h1>
+      <p>Here you can read the latest research on sustainable programming.</p>
+      <p>Do you have studies you want to submit? Send it to <a href="mailto:post@greencode.no">post@greencode.no</a></p>
 
-    <script src="script.js"></script>
+      <div class="flex items-center my-4 py-4 justify-between">
+        <div>
+          <h2 class="my-2 px-4 text-xl">Case study of the month</h2>
+          <p>A short introduction about the case study of the month.</p>
+        </div>
+        <div>
+          <img src="./assets/green-leaves.jpg" alt="" class="block w-full rounded-lg">
+        </div>
+      </div>
+      
+      <div class="flex items-center my-4 py-4 justify-between">
+        <div>
+          <img src="./assets/green-leaves.jpg" alt="" class="block w-full rounded-lg">
+        </div>
+        <div>
+          <h2 class="my-2 px-4 text-xl">Case study of the month</h2>
+          <p>A short introduction about the case study of the month.</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h1 id="contact" class="text-center">Contact</h1>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
