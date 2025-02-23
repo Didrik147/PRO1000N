@@ -26,7 +26,8 @@ h1, h2, h3 {
 
 /* Hero */
 #hero {
-  background-image: url('../assets/green-leaves.jpg');
+  /* background-image: url('../assets/python-code.png'); */
+  background-image: linear-gradient(rgba(4,30,9,0.7), rgba(4,30,9,0.7)), url("../assets/python-code.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
