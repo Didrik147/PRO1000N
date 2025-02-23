@@ -10,9 +10,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <link rel="stylesheet" href="utilities.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <li><a href="#about">About Us</a></li>
         <li><a href="#">Toolkits</a></li>
         <li><a href="#">Quiz</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -54,13 +54,13 @@
           <p>A short introduction about the case study of the month.</p>
         </div>
         <div>
-          <img src="./assets/green-leaves.jpg" alt="" class="block w-full rounded-lg">
+          <img src="./assets/green-leaves.jpg" alt="Green leaves" class="block w-full rounded-lg">
         </div>
       </a>
       
       <a href="#" class="flex items-center my-4 py-4 justify-between">
         <div>
-          <img src="./assets/dall-e-plant-computer.webp" alt="" class="block w-full rounded-lg">
+          <img src="./assets/dall-e-plant-computer.webp" alt="Computer and plants" class="block w-full rounded-lg">
         </div>
         <div>
           <h2 class="my-2 px-4 text-xl">Sustainable AI practices</h2>
@@ -88,8 +88,14 @@
     </section>
   </main>
 
-  <footer>
-    <h1 id="contact" class="text-center">Contact</h1>
+  <footer class="flex flex-row justify-center py-4">
+    <div class="contact">
+      <h1 class="text-2xl">Contact</h1>
+      <p>Greencode gate 23<br>
+      <p>0123 Oslo
+      <p><a href="mailto:post@greencode.no">post@greencode.no</a></p>
+      <p><a href="tel:+4712345678">12 34 56 78</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
