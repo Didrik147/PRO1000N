@@ -19,15 +19,18 @@
   <header>
     <nav>
       <div id='topnav'>
-        <a id='logo' href="index.html">GC</a>
-        <i class="text-2xl fas fa-bars"></i>
+        <a id='logo' href="index.html">
+          <!-- Trenger kilde -->
+          <img src="./assets/navbar-logo.png" alt="Logo">GreenCode
+        </a>
+        <i class="text-2xl fas fa-bars rounded-sm"></i>
       </div>
       <ul class="navlinks">
         <li><a href="#news">News</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#">Toolkits</a></li>
-        <li><a href="#">Quiz</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#toolkits">Toolkits</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -90,8 +93,25 @@
         <div class="circle bg-green-dark text-white text-5xl">O</div>
       </div>
     </section>
+
+    <!-- Contact form -->
+    <section id="contact">
+      <h1 class="text-4xl text-center">Contact Us</h1>
+      <form class="rounded-sm">
+        <div class="row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name">
+        </div>
+        
+        <input type="email" placeholder="Email address" required>
+        <textarea placeholder="Insert text here" required></textarea>
+        <button type="submit" class="rounded-sm">Send</button>
+      </form>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="flex flex-row justify-center py-4">
     <div class="contact">
       <h1 class="text-2xl">Contact</h1>
