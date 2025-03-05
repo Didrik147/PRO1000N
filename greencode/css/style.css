@@ -73,9 +73,10 @@ h1 {
 p {
   margin: 0.4rem;
   padding: 0.4rem;
+  line-height: 1.5;
 }
 
-main section > a {
+.card {
   border: 0.3rem solid var(--green-dark);
   padding: 1rem;
   border-radius: 1rem;
@@ -85,13 +86,21 @@ main section > a {
   color: var(--black);
 }
 
-main section > a:hover {
+.card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 0.5rem var(--black);
 }
 
 #about > div {
   margin-top: 2rem;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 1rem;
+  max-width: 600px;
 }
 
 .circle {
@@ -101,6 +110,12 @@ main section > a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+}
+
+.circle img {
+  width: 100%;
+  padding: 1rem;
 }
 
 /* Images */
@@ -117,6 +132,18 @@ img {
   #news a:first-of-type{
     flex-direction: column;
   }
+}
+
+/* Toolkits */
+#toolkits .flex, #quiz .flex {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#toolkits .card, #quiz .card {
+  width: 300px;
+  padding: 0.5rem;
 }
 
 /* Contact form */
@@ -167,4 +194,8 @@ footer {
 footer p {
   margin: 0;
   padding: 0.3rem 1rem;
+}
+
+footer a {
+  color: var(--white);
 }

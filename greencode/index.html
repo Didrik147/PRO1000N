@@ -26,8 +26,8 @@
         <i class="text-2xl fas fa-bars rounded-sm"></i>
       </div>
       <ul class="navlinks">
-        <li><a href="#news">News</a></li>
         <li><a href="#about">About Us</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#toolkits">Toolkits</a></li>
         <li><a href="#quiz">Quiz</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -47,13 +47,39 @@
   </section>
 
   <main>
+    <!-- About Us -->
+    <section id="about" class="text-center">
+      <h1 class="text-4xl text-center">About Us</h1>
+      <h2 class="text-xl text-center">Who are we?</h2>
+      <!-- <p>The Capstone project has been started as a
+        movement to inform and learn how the
+        software community.</p> -->
+      <!-- <p>Together we can make coding more sustainable.</p> -->
+      <p>The goal of this project is to promote sustainable programming practices (Green Software Development). The website serves as an educational and inspirational platform for building energy-efficient, environmentally friendly, and socially responsible software systems.</p>
+
+      <div class="logo-row">
+        <div class="circle bg-green-dark text-white text-5xl">
+          <img src="./assets/USN-symbol_hvit.png" alt="USN logo">
+        </div>
+        <div class="circle bg-green-dark text-white text-5xl">
+          <img src="./assets/USN-symbol_sort.png" alt="USN logo">
+        </div>
+        <div class="circle bg-green-dark text-white text-5xl">
+          <img src="./assets/USN-symbol_hvit.png" alt="USN logo">
+        </div>
+        <div class="circle bg-green-dark text-white text-5xl">
+          <img src="./assets/USN-symbol_sort.png" alt="USN logo">
+        </div>
+      </div>
+    </section>
+
     <!-- News -->
     <section id="news" class="text-center">
       <h1 class="text-4xl text-center">News</h1>
       <p>Here you can read the latest research on sustainable programming.</p>
       <p>Do you have studies you want to submit? Send it to <a href="mailto:post@greencode.no">post@greencode.no</a></p>
 
-      <a href="#" class="flex items-center my-4 py-4 justify-between">
+      <a href="#" class="flex items-center my-6 py-4 justify-between card">
         <div>
           <h2 class="my-2 px-4 text-xl">Case study of the month</h2>
           <p>A short introduction about the case study of the month.</p>
@@ -64,7 +90,7 @@
         </div>
       </a>
       
-      <a href="#" class="flex items-center my-4 py-4 justify-between">
+      <a href="#" class="flex items-center my-6 py-4 justify-between card">
         <div>
           <!-- Bilde er laget med DALL-E i ChatGPT -->
           <img src="./assets/dall-e-plant-computer.webp" alt="Computer and plants" class="block w-full rounded-lg">
@@ -74,30 +100,64 @@
           <p>Using AI to create images costs a lot of resources.</p>
           <p>Learn how you can reduce your impact.</p>
         </div>
-        
       </a>
     </section>
 
-    <!-- About Us -->
-    <section id="about" class="text-center">
-      <h1 class="text-4xl text-center">About Us</h1>
-      <p>The Capstone project has been started as a
-        movement to inform and learn how the
-        software community.</p>
-      <p>Together we can make coding more sustainable.</p>
+     <!-- Toolkits -->
+     <section id="toolkits" class="text-center">
+      <h1 class="text-4xl text-center">Toolkits</h1>
+      <!-- <p>Toolkits enable IT companies to transform
+        their practices into becoming sustainable</p> -->
 
-      <div class="flex justify-around">
-        <div class="circle bg-green-dark text-white text-5xl">L</div>
-        <div class="circle bg-green-dark text-white text-5xl">O</div>
-        <div class="circle bg-green-dark text-white text-5xl">G</div>
-        <div class="circle bg-green-dark text-white text-5xl">O</div>
+      <p>Are you just starting a buisness or are a established company? We have several toolkits and methotologies avaible to use. We can also help you implement these changes on request. </p>
+
+      <div class="flex my-4">
+        <a href="#" class="flex items-center card">
+          <div>
+            <h2 class="my-2 px-4 text-xl">Flashcards</h2>
+            <p>Use flashcards as an educational tool.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-center card">
+          <div>
+            <h2 class="my-2 px-4 text-xl">Another toolkit</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="text-center">
+      <h1 class="text-4xl text-center">Quiz</h1>
+      <h2 class="text-xl text-center">Wish to test your knowledge?</h2>
+
+      <p>We provide a range of quizzes designed to help you test how well you know the principles of green programming.</p>
+
+      <div class="flex my-4">
+        <a href="#" class="flex items-center card">
+          <div>
+            <h2 class="my-2 px-4 text-xl">Quiz 1</h2>
+            <p>Quiz for students</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-center card">
+          <div>
+            <h2 class="my-2 px-4 text-xl">Quiz 2</h2>
+            <p>Quiz for developers</p>
+          </div>
+        </a>
       </div>
     </section>
 
     <!-- Contact form -->
     <section id="contact">
       <h1 class="text-4xl text-center">Contact Us</h1>
-      <form class="rounded-sm">
+      <h2 class="text-xl text-center">Any questions?</h2>
+      <form class="rounded-sm my-4">
         <div class="row">
           <input type="text" placeholder="First name" required>
           <input type="text" placeholder="Last name">
@@ -110,6 +170,7 @@
     </section>
 
   </main>
+
 
   <!-- Footer -->
   <footer class="flex flex-row justify-center py-4">
