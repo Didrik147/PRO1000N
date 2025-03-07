@@ -77,8 +77,17 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.m-auto {
+  margin: auto;
+}
 
 /* Padding */
+.p-0 {
+  padding: 0px;
+}
+.pb-0 {
+  padding-bottom: 0px;
+}
 .p-4	{
   padding: 1rem;
 }
@@ -89,6 +98,9 @@
 .py-4	{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.pt-16 {
+  padding-top: 4rem;
 }
 
 /* Dislay */

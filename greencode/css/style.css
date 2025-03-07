@@ -70,6 +70,7 @@ h1 {
   padding: 1rem;
 }
 
+
 p {
   margin: 0.4rem;
   padding: 0.4rem;
@@ -177,6 +178,7 @@ button {
   color: var(--white);
   padding: 0.5rem 3.5rem;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -198,4 +200,25 @@ footer p {
 
 footer a {
   color: var(--white);
+}
+
+
+h3 {
+  margin-bottom: 0.4rem;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+}
+
+.question-container label {
+  margin: 0.4rem;
+  margin-left: 1.2rem;
+}
+
+.question-container input[type='radio'] {
+  margin-right: 0.2rem;
+  filter: grayscale(100%);
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenCode</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id='topnav'>
+        <a id='logo' href="index.html">
+          <!-- Trenger kilde -->
+          <img src="./assets/navbar-logo.png" alt="Logo">GreenCode
+        </a>
+        <i class="text-2xl fas fa-bars rounded-sm"></i>
+      </div>
+      <ul class="navlinks">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#toolkits">Toolkits</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <h1 class="text-center">Quiz 1</h1>
+    <!-- The questions for the quiz was made using ChatGPT -->
+    <div class="quiz-container">
+      <div class="question-container">
+          <h3>1. What is the primary goal of sustainable coding practices?</h3>
+          <label>
+              <input type="radio" name="q1">To write code that is difficult to understand
+          </label>
+          <label>
+              <input type="radio" name="q1">To minimize resource consumption and environmental impact
+          </label>
+          <label>
+              <input type="radio" name="q1">To maximize the use of complex algorithms
+          </label>
+          <label>
+              <input type="radio" name="q1">To ensure code runs only on specific hardware
+          </label>
+      </div>
+
+      <div class="question-container">
+          <h3>2. Which of the following practices can help reduce energy consumption in software applications?</h3>
+          <label>
+              <input type="radio" name="q2">Java
+          </label>
+          <label>
+              <input type="radio" name="q2">Python
+          </label>
+          <label>
+              <input type="radio" name="q2">Rust
+          </label>
+      </div>
+
+      <div class="question-container">
+          <h3>3. Which programming language is often considered one of the most environmentally friendly due to its efficiency and low resource consumption? </h3>
+          <label>
+              <input type="radio" name="q3">Using more loops in algorithms
+          </label>
+          <label>
+              <input type="radio" name="q3">Optimizing algorithms for efficiency
+          </label>
+          <label>
+              <input type="radio" name="q3">Writing code in multiple programming languages
+          </label>
+      </div>
+    </div>
+
+    <button id="btn-check" class="block m-auto text-">Sjekk svar</button>
+
+    <p id="result"></p>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="flex flex-row justify-center py-4">
+    <div class="contact">
+      <h1 class="text-2xl">Contact</h1>
+      <p>Greencode gate 23<br>
+      <p>0123 Oslo
+      <p><a href="mailto:post@greencode.no">post@greencode.no</a></p>
+      <p><a href="tel:+4712345678">12 34 56 78</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
