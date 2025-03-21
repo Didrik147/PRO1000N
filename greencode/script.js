@@ -1,3 +1,4 @@
+/* Navbar */
 // Get elements from DOM
 const barsEl = document.querySelector('.fa-bars')
 const navlinksEl = document.querySelector('.navlinks')
