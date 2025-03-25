@@ -16,7 +16,12 @@ const cardsEl = [];
 
 
 // Store card data
+// Flashcard content was made using OpenAI's GTP-4 large language model
 const cardsData = [
+    {
+        question: "What is environmental coding?",
+        answer: "Environmental coding focuses on developing software that minimizes environmental impact by reducing energy consumption and resource usage, contributing to sustainability efforts."
+    },
     {
         question: 'Why is efficient code important in sustainability?',
         answer: 'Efficient code reduces the resources needed for execution, such as CPU and memory, thereby lowering energy consumption and environmental impact.'
@@ -28,6 +33,10 @@ const cardsData = [
     {
         question: 'How can developers minimize redundant code?',
         answer: `By adhering to DRY (Don't Repeat Yourself) principles, using modular programming, and leveraging libraries or frameworks instead of duplicating functionality.`
+    },
+    {
+        question: "What role do data centers play in sustainable coding?",
+        answer: "Data centers that use renewable energy, efficient cooling systems, and proper resource scaling help reduce the environmental impact of hosting and running applications."
     }
 ];
 

@@ -35,14 +35,18 @@ h1, h2, h3 {
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .text-box {
-  margin: 2rem;
+  /* margin: 2rem;
   margin-bottom: 10rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.4rem;
-  max-width: 500px;
+  border-radius: 0.4rem; */
+  max-width: 450px;
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
 }
 
 .text-box h1 {
@@ -219,11 +223,21 @@ h3 {
 }
 
 .question-container label {
-  margin: 0.4rem;
+  /* margin: 0.4rem; */
+  padding: 0.4rem;
   margin-left: 1.2rem;
+  border-radius: 0.2rem;
+  width: fit-content;
 }
 
 .question-container input[type='radio'] {
   margin-right: 0.2rem;
   filter: grayscale(100%);
+}
+
+.correct {
+  background-color: lightgreen;
+}
+.wrong {
+  background-color: lightcoral;
 }
