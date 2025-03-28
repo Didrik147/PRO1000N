@@ -178,6 +178,13 @@
   justify-content: space-around;
 }
 
+.grow {
+  flex-grow: 1;
+}
+.basis-0 {
+  flex-basis: 0;
+}
+
 /* Object fit */
 .object-cover {
   object-fit: cover;
