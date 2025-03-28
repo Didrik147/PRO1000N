@@ -92,26 +92,28 @@ createCards();
 // Event listeners
 
 // Next button
-nextBtn.addEventListener('click', () => {
-  cardsEl[currentActiveCard].className = 'card left';
+nextBtn.addEventListener('click', getNextCard)
 
-  //currentActiveCard = currentActiveCard + 1;
-  currentActiveCard += 1;
+function getNextCard(){
+    cardsEl[currentActiveCard].className = 'card left';
 
-  if (currentActiveCard > cardsEl.length - 1){
-      currentActiveCard = cardsEl.length - 1;
-  }
-
-  cardsEl[currentActiveCard].className = 'card active'
-
-  updateCurrentText();
-
-});
-
+    //currentActiveCard = currentActiveCard + 1;
+    currentActiveCard += 1;
+  
+    if (currentActiveCard > cardsEl.length - 1){
+        currentActiveCard = cardsEl.length - 1;
+    }
+  
+    cardsEl[currentActiveCard].className = 'card active'
+  
+    updateCurrentText();
+}
 
 // Previous button
-prevBtn.addEventListener('click', () => {
-  cardsEl[currentActiveCard].className = 'card right';
+prevBtn.addEventListener('click', getPrevCard)
+
+function getPrevCard(){
+    cardsEl[currentActiveCard].className = 'card right';
 
   currentActiveCard -= 1;
 
@@ -122,5 +124,20 @@ prevBtn.addEventListener('click', () => {
   cardsEl[currentActiveCard].className = 'card active'
 
   updateCurrentText();
+}
 
-});
+// Interact with flashcard using keyboard buttons
+document.addEventListener('keydown', (e) => {
+    // Left arrow key
+    if (e.key == 'ArrowLeft'){
+        getPrevCard()
+    }
+    // Right arrow key
+    if (e.key == 'ArrowRight'){
+        getNextCard()
+    }
+    // Spacebar
+    if(e.key == ' '){
+        cardsEl[currentActiveCard].classList.toggle('show-answer')
+    }
+})
