@@ -36,11 +36,6 @@ body {
     transform: translateX(0) rotateY(0deg);
 }
 
-a.active {
-    color: var(--white);
-    background-color: var(--green-dark);
-}
-
 
 /* Left class on the same element as the card */
 .card.left {

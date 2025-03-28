@@ -27,29 +27,37 @@
 }
 
 /* Font Size */
+.text-lg	{
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+/* Font Weight */
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
 }
 
 /* Margin */
@@ -198,7 +206,9 @@
 .max-w-2xl {
   max-width: 42rem; /* 672px */
 }	
-
+.max-w-3xl {
+  max-width: 48rem; /* 768px */
+}	
 .max-w-full {
   max-width: 100%;
 }

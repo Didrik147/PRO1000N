@@ -49,6 +49,11 @@ nav ul li a {
   border-radius: 0.4rem;
 }
 
+nav ul li a.active {
+  color: var(--white);
+  background-color: var(--green-dark);
+}
+
 nav ul li a:hover {
   color: var(--white);
   background-color: var(--green-dark);
