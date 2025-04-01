@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenCode</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id='topnav'>
+        <a id='logo' href="index.html">
+          <!-- Trenger kilde -->
+          <img src="./assets/navbar-logo.png" alt="Logo">GreenCode
+        </a>
+        <i class="text-2xl fas fa-bars rounded-sm"></i>
+      </div>
+      <ul class="navlinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#how">How</a></li>
+        <li><a href="index.html#news" class="active">News</a></li>
+        <li><a href="index.html#toolkits">Toolkits</a></li>
+        <li><a href="index.html#quiz">Quiz</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mt-20 mb-8 w-full">
+    <h1 class="text-3xl text-center mb-0 font-medium">AI and Image Generation: <br>A Hidden Environmental Concern </h1>
+
+    <p class="text-lg">Artificial intelligence has transformed digital creativity, making it easier than ever to
+      generate stunning images with just a few clicks. However, behind every AI-generated artwork lies a significant
+      environmental cost. Training and running AI models require immense computational power, leading to increased
+      energy consumption and carbon emissions.
+    </p>
+
+    <p class="text-lg">In this article, we explore the environmental impact of AI-powered image generation and discuss
+      how designers, developers, and content creators can minimize their footprint.</p>
+    <p>Authors: Marie Fauconnier and ChatGPT <br>
+      Published: 27.03.25, 18:10 </p>
+
+
+    <img src="./assets/dall-e-plant-computer.webp" alt="Computer and plants"
+      class="max-w-2xl w-full object-cover mx-auto block max-h-96">
+
+
+
+    <h2>The Energy Cost of AI Image Generation</h2>
+    <p>AI models used for image generation, such as DALL·E and Stable Diffusion, require large-scale computing
+      resources. Some of the key factors contributing to their environmental impact include:
+    <ul>
+      <li>High GPU Processing Power: AI models rely on powerful GPUs (graphics processing units) to generate images.
+        These GPUs require substantial electricity, especially in large-scale operations.</li>
+      <li>Cloud Computing and Data Centers: Many AI tools run on cloud platforms, which rely on massive data centers. If
+        these centers are powered by fossil fuels, their carbon footprint increases significantly.</li>
+      <li>Training vs. Inference: Training a generative AI model from scratch can emit as much CO₂ as five cars over
+        their lifetime. Even running smaller AI models (inference) consumes considerable energy, particularly for
+        high-resolution images.</li>
+    </ul>
+    </p>
+
+    <h2>How to Reduce the Environmental Impact of AI Image Generation</h2>
+    <p>Although AI-powered creativity is here to stay, there are ways to make it more sustainable. Here are five key
+      strategies to reduce energy consumption when generating images with AI:
+    <ol>
+      <li>Use Pre-Trained Models: Instead of training AI models from scratch, leverage pre-trained models that have
+        already undergone intensive training. This eliminates redundant computing processes and significantly reduces
+        energy use.</li>
+      <li>Choose Energy-Efficient Cloud Providers: If you're using cloud-based AI tools, opt for providers that run on
+        renewable energy. Many tech companies, including Google, Microsoft, and AWS, are moving toward carbon-neutral
+        data centers.</li>
+      <li>Optimize Image Resolution: Higher-resolution images require more computing power. Consider generating images
+        at a lower resolution and upscaling them later using efficient algorithms. This can reduce processing time and
+        energy consumption.</li>
+      <li>Batch Processing and Smart Scheduling: Instead of generating images one by one, batch process multiple
+        requests in a single computing session. This reduces the overhead energy cost of restarting GPU instances
+        repeatedly. Additionally, scheduling image generation during off-peak hours or when renewable energy is more available can
+        help minimize environmental impact.</li>
+      <li>Reuse and Modify Existing AI-Generated Images: Before creating new AI-generated images, consider modifying
+        existing ones. Simple adjustments, such as changing colors or adding overlays, can reduce the need for repeated
+        generation cycles.</li>
+    </ol>
+    </p>
+
+    <h2>The Future of Sustainable AI Creativity</h2>
+    <p>As AI technology advances, researchers and developers are working on more energy-efficient models that require
+      fewer computational resources. By adopting responsible AI usage practices, designers and developers can enjoy the
+      benefits of AI-powered creativity while minimizing environmental harm.
+      By being mindful of how and when we use AI, we can ensure that innovation and sustainability go hand in hand.</p>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="flex flex-row justify-center py-4">
+    © GreenCode AS, 2025
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

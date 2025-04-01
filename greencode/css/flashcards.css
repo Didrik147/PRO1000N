@@ -109,4 +109,8 @@ body {
     margin: 0 25px;
 }
 
-@media(max-width: 640px) {}
+@media(max-width: 640px) {
+    .nav-button {
+        padding: 0.5rem 8vw;
+    }
+}

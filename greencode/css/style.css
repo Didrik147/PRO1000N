@@ -82,7 +82,11 @@ main section {
   margin-bottom: 2rem;
 }
 
-main ul li {
+main ul, main ol {
+  padding-left: 2.5rem;
+}
+
+main li {
   margin-bottom: 0.4rem;
 }
 
