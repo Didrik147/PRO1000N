@@ -68,6 +68,10 @@
   font-weight: 500;
 }
 
+.font-semibold { 
+  font-weight: 600;
+}
+
 /* Margin */
 .mx-auto {
   margin-left: auto;
@@ -121,6 +125,10 @@
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem; /* 40px */
 }
 
 .mt-16 {
