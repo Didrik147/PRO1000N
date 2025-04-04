@@ -1,7 +1,7 @@
 // TODO: Change all comments to English
 
-// Question object
 // The multiple choice quiz content was made using OpenAI's GTP-4 large language model
+
 let question1 = {
   query: "What is the primary goal of sustainable programming?",
   options: ["To minimize environmental impact", "To maximize speed", "To reduce programming errors"],
@@ -33,7 +33,7 @@ let question5 = {
 };
 
 // Array with questions
-let questions = [question1, question2, question3, question4];
+let questions = [question1, question2, question3, question4, question5];
 
 // Get elements from DOM
 let quizContainerEl = document.querySelector('.quiz-container')
@@ -104,8 +104,6 @@ getQuestions()
 checkBtn.addEventListener('click', checkAnswers)
 
 function checkAnswers() {
-  console.log("Finner poeng")
-
   checkBtn.classList.add('hidden')
   resultEl.classList.remove('hidden')
 

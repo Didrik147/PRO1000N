@@ -72,6 +72,11 @@
   font-weight: 600;
 }
 
+/* Italic */
+.italic {
+  font-style: italic;
+}
+
 /* Margin */
 .mx-auto {
   margin-left: auto;
