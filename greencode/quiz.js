@@ -57,7 +57,7 @@ function getQuestions() {
     // Fill quiz container with question
     quizContainerEl.innerHTML += `
       <div class="question-container" id="question${i + 1}">
-        <h3>${i + 1}. ${query}</h3>
+        <h2 class="text-lg font-semibold my-2">${i + 1}. ${query}</h2>
       </div>
       `
 
@@ -107,6 +107,7 @@ function checkAnswers() {
   console.log("Finner poeng")
 
   checkBtn.classList.add('hidden')
+  resultEl.classList.remove('hidden')
 
   let points = 0
 

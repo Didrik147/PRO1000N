@@ -122,13 +122,31 @@
 .mt-8 {
   margin-top: 2rem;
 }
-
 .mb-8 {
   margin-bottom: 2rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
+.mt-10 {
+  margin-top: 2.5rem; /* 40px */
+}
 .mb-10 {
   margin-bottom: 2.5rem; /* 40px */
+}
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem; /* 48px */
+}
+
+.mt-14 {
+  margin-top: 3.5rem; /* 56px */
 }
 
 .mt-16 {
