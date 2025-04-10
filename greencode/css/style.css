@@ -1,5 +1,6 @@
 :root {
   --green-dark: #209246;
+  /* --green-dark: #1D8640; */
   --green-light: #d9f99d;
   --white: #fff;
   --black: #000;
@@ -63,7 +64,6 @@ header {
 #hero {
   /* Trenger kilde på bildet */
   background-image: url('../assets/green-leaves-white-background.jpg');
-  /* background-image: linear-gradient(rgba(4,30,9,0.7), rgba(4,30,9,0.7)), url("../assets/python-code.png"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
