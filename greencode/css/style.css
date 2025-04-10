@@ -62,7 +62,8 @@ header {
 
 /* Hero */
 #hero {
-  /* Trenger kilde på bildet */
+  /* Source for background image: */
+  /* https://www.freepik.com/free-photo/green-leaves-white-background_4100627.htm */
   background-image: url('../assets/green-leaves-white-background.jpg');
   background-position: center;
   background-size: cover;
