@@ -59,12 +59,29 @@ nav ul li a:hover {
   background-color: var(--green-dark);
 }
 
-.fa-bars {
-  display: none;
-  padding: 0.2rem 0.8rem;
+.hamburger {
   cursor: pointer;
+  background: white;
+  display: none;
+  gap: 0.4rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem;
   border: 1px solid var(--green-dark);
 }
+
+
+/* Hamburger Menu */
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  background: var(--green-dark);
+  border-radius: 1rem;
+}
+
 
 #topnav {
   display: flex;
@@ -72,13 +89,13 @@ nav ul li a:hover {
 }
 
 @media(max-width: 768px){
-  .fa-bars {
-    display: block;
+  .hamburger {
+    display: flex;
   }
 
   #topnav {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--black);
   }
 

@@ -229,7 +229,7 @@ form textarea {
   height: 150px;
 }
 
-button {
+main button {
   background-color: var(--green-dark);
   color: var(--white);
   padding: 0.5rem 3.5rem;
@@ -237,7 +237,7 @@ button {
   font-size: 1rem;
 }
 
-button:hover {
+main button:hover {
   color: var(--green-dark);
   background-color: var(--white);
   box-shadow: 0.1rem 0.1rem 0.2rem var(--black);

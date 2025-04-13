@@ -7,13 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenCode</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-
-    <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/utilities.css">
 </head>
 
 <body>
@@ -21,10 +18,15 @@
     <nav>
       <div id='topnav'>
         <a id='logo' href="index.html">
-          <!-- Trenger kilde -->
+          <!-- Logo is retrieved from Figma -->
           <img src="./assets/navbar-logo.png" alt="Logo">GreenCode
         </a>
-        <i class="text-2xl fas fa-bars rounded-sm"></i>
+        <!-- Hamburger Menu -->
+        <button class="hamburger rounded-sm">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
       <ul class="navlinks">
         <li><a href="index.html#about">About</a></li>

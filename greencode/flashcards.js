@@ -15,7 +15,6 @@ let currentActiveCard = 0;
 const cardsEl = [];
 
 
-// Store card data
 // Flashcard content was made using OpenAI's GTP-4 large language model
 const cardsData = [
     {
@@ -40,22 +39,41 @@ const cardsData = [
     }
 ];
 
+// Flashcard content was made using InnSpill
+/* const cardsData = [
+    {
+        question: "What does green software mean?",
+        answer: "Green software refers to applications that have been designed with energy efficiency and sustainability in mind. It includes considerations such as reducing energy consumption during the software's run-time and optimizing code for efficiency."
+    },
+    {
+        question: "What are some strategies used in green coding?",
+        answer: "Green coding strategies can include reduce idle time, efficient use of data structures and algorithms, reduction of memory usage, limiting network traffic, and conducting regular code reviews to find inefficient code."
+    },
+    {
+        question: "How does green coding affect the life-cycle of software?",
+        answer: "Green coding considers the entire life-cycle of software, from design, implementation, testing, to deployment and maintenance. It involves reducing the energy consumption and environmental impact in all stages of this life-cycle, eventually leading to a more sustainable software product."
+    },
+    {
+        question: "Why is green coding important?",
+        answer: "Green coding is crucial because the Information and Communication Technology (ICT) sector is a significant consumer of electricity. By optimizing software for energy efficiency, developers can reduce the carbon footprint of their applications, contributing to overall sustainability efforts."
+    }
+]; */
 
 // Create all cards
-function createCards(){
-  cardsData.forEach((data, index) => createCard(data, index));
+function createCards() {
+    cardsData.forEach((data, index) => createCard(data, index));
 }
 
 // Create a single card in DOM
-function createCard(data, index){
-  const card = document.createElement('div');
-  card.classList.add('card');
-  
-  if (index === 0){
-      card.classList.add('active');
-  }
+function createCard(data, index) {
+    const card = document.createElement('div');
+    card.classList.add('card');
 
-  card.innerHTML = `
+    if (index === 0) {
+        card.classList.add('active');
+    }
+
+    card.innerHTML = `
   <div class="inner-card">
       <div class="inner-card-front">
           <p>
@@ -71,19 +89,19 @@ function createCard(data, index){
   </div>
   `;
 
-  card.addEventListener('click', () => card.classList.toggle('show-answer'));
+    card.addEventListener('click', () => card.classList.toggle('show-answer'));
 
-  // Add  to DOM cards
-  cardsEl.push(card);
+    // Add  to DOM cards
+    cardsEl.push(card);
 
-  cardsContainer.appendChild(card);
+    cardsContainer.appendChild(card);
 
-  updateCurrentText();
+    updateCurrentText();
 }
 
 // Show number of cards
-function updateCurrentText(){
-  currentEl.innerText = `${currentActiveCard + 1} / ${cardsEl.length}`;
+function updateCurrentText() {
+    currentEl.innerText = `${currentActiveCard + 1} / ${cardsEl.length}`;
 }
 
 createCards();
@@ -94,50 +112,51 @@ createCards();
 // Next button
 nextBtn.addEventListener('click', getNextCard)
 
-function getNextCard(){
+function getNextCard() {
     cardsEl[currentActiveCard].className = 'card left';
 
     //currentActiveCard = currentActiveCard + 1;
     currentActiveCard += 1;
-  
-    if (currentActiveCard > cardsEl.length - 1){
+
+    if (currentActiveCard > cardsEl.length - 1) {
         currentActiveCard = cardsEl.length - 1;
     }
-  
+
     cardsEl[currentActiveCard].className = 'card active'
-  
+
     updateCurrentText();
 }
 
 // Previous button
 prevBtn.addEventListener('click', getPrevCard)
 
-function getPrevCard(){
+function getPrevCard() {
     cardsEl[currentActiveCard].className = 'card right';
 
-  currentActiveCard -= 1;
+    currentActiveCard -= 1;
 
-  if (currentActiveCard < 0){
-      currentActiveCard = 0;
-  }
+    if (currentActiveCard < 0) {
+        currentActiveCard = 0;
+    }
 
-  cardsEl[currentActiveCard].className = 'card active'
+    cardsEl[currentActiveCard].className = 'card active'
 
-  updateCurrentText();
+    updateCurrentText();
 }
 
 // Interact with flashcard using keyboard buttons
 document.addEventListener('keydown', (e) => {
+    console.log(e.key)
     // Left arrow key
-    if (e.key == 'ArrowLeft'){
+    if (e.key == 'ArrowLeft') {
         getPrevCard()
     }
     // Right arrow key
-    if (e.key == 'ArrowRight'){
+    if (e.key == 'ArrowRight') {
         getNextCard()
     }
-    // Spacebar
-    if(e.key == ' '){
+    // f key
+    if (e.key == 'f') {
         cardsEl[currentActiveCard].classList.toggle('show-answer')
     }
 })

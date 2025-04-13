@@ -7,15 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GreenCode</title>
 
-  <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/flashcards.css">
-
-    <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/flashcards.css">
+  <link rel="stylesheet" href="./css/utilities.css">
 </head>
 
 <body>
@@ -23,10 +19,15 @@
     <nav>
       <div id='topnav'>
         <a id='logo' href="index.html">
-          <!-- Trenger kilde -->
+          <!-- Logo is retrieved from Figma -->
           <img src="./assets/navbar-logo.png" alt="Logo">GreenCode
         </a>
-        <i class="text-2xl fas fa-bars rounded-sm"></i>
+        <!-- Hamburger Menu -->
+        <button class="hamburger rounded-sm">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
       <ul class="navlinks">
         <li><a href="index.html#about">About</a></li>
@@ -45,7 +46,9 @@
   <main class="mt-16 flex flex-col items-center">
     <h1 class="text-center mb-0">Flashcards</h1>
     <h2 class="text-center font-medium">Use these flashcards to learn more about green coding practices</h2>
-    <div id="cards-container" class="cards mt-4">
+    <p class="m-0">Click on the buttons or use the arrows keys to change the flashcard.</p>
+    <p class="m-0">Click on the flashcard or press "f" to flip it.</p>
+    <div id="cards-container" class="cards mt-6">
       <!-- <div class="card active">
         <div class="inner-card">
           <div class="inner-card-front">
@@ -62,15 +65,17 @@
 
     <div class="navigation">
       <button id="prev" class="nav-button">
-          <i class="fas fa-arrow-left"></i>
+        ←
       </button>
 
       <p id="current"></p>
 
       <button id="next" class="nav-button">
-          <i class="fas fa-arrow-right"></i>
+        →
       </button>
   </div>
+
+  <p>Flashcard content was made using OpenAI's GTP-4 large language model.</p>
   </main>
 
 
