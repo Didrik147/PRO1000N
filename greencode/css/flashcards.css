@@ -108,17 +108,12 @@ main {
 .navigation .nav-button {
     border: none;
     cursor: pointer;
-    font-size: 2.5rem;
-    padding: 0rem 3rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 0rem min(8vw, 3rem);
+    font-family: monospace;
 }
 
 .navigation p {
     margin: 0 25px;
-}
-
-@media(max-width: 640px) {
-    .navigation .nav-button {
-        font-size: 2rem;
-        padding: 0rem 7vw;
-    }
 }
