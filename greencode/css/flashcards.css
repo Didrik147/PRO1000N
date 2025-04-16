@@ -111,7 +111,7 @@ main {
     font-size: 3rem;
     line-height: 3rem;
     padding: 0rem min(8vw, 3rem);
-    font-family: monospace;
+    font-family: DejaVu Sans Mono, monospace;
 }
 
 .navigation p {
