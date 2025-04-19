@@ -47,65 +47,82 @@
   </header>
 
   <main class="mt-16 mb-8">
-    <h1 class="text-center font-medium">AI and Image Generation: <br>A Hidden Environmental Concern </h1>
+    <h1 class="text-center font-medium">Do Generative AI Tools Ensure Green Code?<br>
+      An Investigative Study</h1>
 
-    <p class="text-lg">Artificial intelligence has transformed digital creativity, making it easier than ever to generate stunning images with just a few clicks. However, behind every AI-generated artwork lies a significant environmental cost. Training and running AI models require immense computational power, leading to increased energy consumption and carbon emissions.
+    <p class="text-lg">In the age of rapidly evolving artificial intelligence, "Do Generative AI Tools Ensure Green Code?" by Samarth Sikand and collegues investigates a critical but underexplored question: can generative AI tools like ChatGPT, Google BARD, and GitHub Copilot generate code that is environmentally sustainable by default? The study assesses whether these tools adhere to well-known sustainable coding practices, commonly referred to as “green code”, which are vital in reducing the environmental footprint of software systems.
     </p>
 
-    <p class="text-lg">In this case study, we explore the environmental impact of AI-powered image generation and discuss how designers, developers, and content creators can minimize their footprint.</p>
-    <p>Authors: Marie Fauconnier and ChatGPT <br>
-      Published: 27.03.25, 18:10 </p>
+    <p>Authors: S. Sikand, R. Mehra, V. S. Sharma, V. Kaulgud, S. Podder and A. P. Burden <br> 
+    Published 11.09.24 <br>
+    in: <a href="https://ieeexplore-ieee-org.ezproxy1.usn.no/xpl/conhome/10669842/proceeding">2024 IEEE/ACM International Workshop on Responsible AI Engineering (RAIE)</a></p>
 
 
-    <img src="./assets/dall-e-plant-computer.webp" alt="Computer and plants"
-      class="max-w-2xl w-full object-cover mx-auto block max-h-96">
+    <figure class="max-w-2xl w-full mx-auto">
+      <img src="./assets/dall-e-plant-computer.webp" alt="Computer and plants"
+      class="max-w-full object-cover block max-h-96 mb-2">
+      <figcaption class="italic">Image created by OpenAI's DALL·E 3.</figcaption>
+    </figure>
+    
 
 
 
-    <h2>The Energy Cost of AI Image Generation</h2>
-    <p>AI models used for image generation, such as DALL·E and Stable Diffusion, require large-scale computing
-      resources. Some of the key factors contributing to their environmental impact include:
+    <h2>Context and Motivation</h2>
+    <p>Software sustainability is an emerging priority as the digital sector contributes significantly to global greenhouse gas emissions. Estimates suggest that ICT could account for up to 14% of global emissions by 2040. The underlying problem is the widespread use of energy-inefficient coding patterns. With more developers now relying on generative AI tools for writing code, the responsibility for producing sustainable software is increasingly shared between human developers and AI.
+      While much research has assessed AI-generated code in terms of security, correctness, and maintainability, its environmental impact has largely been ignored. The 2024 article written by Sikand et al. addresses that gap by evaluating how well AI-generated code aligns with sustainable software development practices.
+    </p>
+    
+
+    <h2>Research Design and Methodology</h2>
+    <p>The authors created a set of six green coding rules, five drawn from CAST’s Green IT rulebook and one based on energy efficiency in Java I/O APIs. These rules reflect energy-saving strategies such as:
     </p>
     <ul>
-      <li>High GPU Processing Power: AI models rely on powerful GPUs (graphics processing units) to generate images.
-        These GPUs require substantial electricity, especially in large-scale operations.</li>
-      <li>Cloud Computing and Data Centers: Many AI tools run on cloud platforms, which rely on massive data centers. If
-        these centers are powered by fossil fuels, their carbon footprint increases significantly.</li>
-      <li>Training vs. Inference: Training a generative AI model from scratch can emit as much CO₂ as five cars over
-        their lifetime. Even running smaller AI models (inference) consumes considerable energy, particularly for
-        high-resolution images.</li>
+      <li>Using StringBuilder instead of string concatenation in loops.</li>
+      <li>Avoiding Hashtable in favor of HashMap.</li>
+      <li>Managing file resources properly in Python.</li>
+      <li>Replacing inefficient I/O APIs in Java.</li>
+      <li>Preferring loop-based iteration over forEach() in JavaScript.</li>
+      <li>Using energy-efficient database column types.</li>
+    </ul>
+    <p>Each rule was associated with two natural language prompts designed to test how each AI tool responded without being directly instructed to optimize for sustainability. The tools (ChatGPT, BARD, and Copilot) were then evaluated based on whether their code outputs adhered to these sustainable practices.</p>
+    
+
+    <h2>Findings</h2>
+    <p>The results were telling: None of the tools consistently followed green coding practices by default. In fact, many of the generated solutions used energy-inefficient code, especially in scenarios where best practices were well-established. For example:</p>
+    <ul>
+      <li>For Java I/O operations (Rule 1), all three tools defaulted to using inefficient classes like Scanner, rather than optimal alternatives.</li>
+      <li>Copilot had the weakest performance overall, with non-compliance in 5 out of the 6 rules tested.</li>
+      <li>ChatGPT and BARD showed slightly better performance, but still failed to consistently produce sustainable code across all rules.</li>
     </ul>
     
+    <h2>Analysis</h2>
+    <p>Sitkand et al. make a compelling case for the importance of sustainability in AI-assisted coding. The study provides early, yet valuable evidence that current generative AI tools are not equipped to prioritize energy efficiency by default. This is significant because as these tools become integral to mainstream software development, their environmental impact scales with their adoption.
+      </p>
+      <p>One of the strengths of the study is its clear, replicable methodology: selecting testable rules, crafting targeted prompts, and manually verifying outputs. However, the authors also acknowledge several limitations:</p>
 
-    <h2>How to Reduce the Environmental Impact of AI Image Generation</h2>
-    <p>Although AI-powered creativity is here to stay, there are ways to make it more sustainable. Here are five key
-      strategies to reduce energy consumption when generating images with AI:
-    </p>
-    <ol>
-      <li>Use Pre-Trained Models: Instead of training AI models from scratch, leverage pre-trained models that have
-        already undergone intensive training. This eliminates redundant computing processes and significantly reduces
-        energy use.</li>
-      <li>Choose Energy-Efficient Cloud Providers: If you're using cloud-based AI tools, opt for providers that run on
-        renewable energy. Many tech companies, including Google, Microsoft, and AWS, are moving toward carbon-neutral
-        data centers.</li>
-      <li>Optimize Image Resolution: Higher-resolution images require more computing power. Consider generating images
-        at a lower resolution and upscaling them later using efficient algorithms. This can reduce processing time and
-        energy consumption.</li>
-      <li>Batch Processing and Smart Scheduling: Instead of generating images one by one, batch process multiple
-        requests in a single computing session. This reduces the overhead energy cost of restarting GPU instances
-        repeatedly. Additionally, scheduling image generation during off-peak hours or when renewable energy is more available can
-        help minimize environmental impact.</li>
-      <li>Reuse and Modify Existing AI-Generated Images: Before creating new AI-generated images, consider modifying
-        existing ones. Simple adjustments, such as changing colors or adding overlays, can reduce the need for repeated
-        generation cycles.</li>
-    </ol>
-    
+      <ul>
+        <li>The study only included six rules and three AI tools.</li>
+        <li>Many sustainability rules are complex and difficult to evaluate through natural language prompts.</li>
+        <li>The experiment didn't test the tools' responses to prompts that explicitly requested green code, only their default behaviour.</li>
+      </ul>
 
-    <h2>The Future of Sustainable AI Creativity</h2>
-    <p>As AI technology advances, researchers and developers are working on more energy-efficient models that require
-      fewer computational resources. By adopting responsible AI usage practices, designers and developers can enjoy the
-      benefits of AI-powered creativity while minimizing environmental harm.
-      By being mindful of how and when we use AI, we can ensure that innovation and sustainability go hand in hand.</p>
+      <p>Despite these limitations, the findings offer valuable insights. The study reveals that AI-generated code, while syntactically correct and functionally effective, is not necessarily optimized for energy efficiency. The authors suggest that better results could be achieved by:</p>
+
+      <ul>
+        <li>Fine-tuning AI models on datasets that emphasize sustainable coding practices.</li>
+          <li>Using prompt engineering to explicitly request green code.</li>
+          <li>Embedding green rule-checkers or linters in development workflows to catch inefficient patterns.</li>
+      </ul>
+
+      <h2>Conclusion and Implications</h2>
+      <p>This study is a timely reminder that AI is not inherently sustainable. Without intentional design or intervention, generative AI tools will continue to favor conventional coding patterns—many of which are not energy efficient. As AI-generated code becomes ubiquitous, developers, researchers, and toolmakers need to ensure that sustainability is treated as a first-class concern alongside performance, security, and maintainability.</p>
+
+      <p>Ultimately, "Do Generative AI Tools Ensure Green Code?" serves as a foundational call to action. It highlights a crucial intersection of AI, software engineering, and environmental responsibility, urging the community to look beyond functionality and begin designing systems that are not just smart, but also sustainable.
+      </p>
+
+      <p class="font-semibold">The summary and analysis of this study is written by Marie Fauconnier from the GreenCode project.<br>
+        You can read the full article <a href="https://ieeexplore-ieee-org.ezproxy1.usn.no/document/10669885/authors" class="underline">here</a>.</p>
+      
 
   </main>
 
