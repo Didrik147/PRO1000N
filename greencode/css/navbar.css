@@ -78,7 +78,7 @@ nav ul li a:hover {
   display: block;
   width: 1.5rem;
   height: 0.2rem;
-  background: var(--green-dark);
+  background-color: var(--green-dark);
   border-radius: 1rem;
 }
 
