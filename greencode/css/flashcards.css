@@ -114,6 +114,11 @@ main {
     overflow-y: hidden;
 }
 
+.right-arrow {
+    display: block;
+    transform: rotate(180deg);
+}
+
 .navigation p {
     margin: 0 25px;
 }
