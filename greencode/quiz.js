@@ -32,6 +32,37 @@ let question5 = {
   solution: "Centers with efficient cooling systems"
 };
 
+// The multiple choice quiz content was made using InnSpill
+/* let question1 = {
+  query: "What does it mean green coding or sustainable programming?",
+  options: ["Programming with green color coded themes", "Writing environmentally responsible code that minimizes energy consumption", "Creating code faster, resulting in a shorter greenspace or production time"],
+  solution: "Writing environmentally responsible code that minimizes energy consumption"
+};
+
+let question2 = {
+  query: "What affects energy efficiency in software development?",
+  options: ["The programming language used", "The design and implementation of the algorithms and data structures", "The choice of music the developer listens to while coding"],
+  solution: "The design and implementation of the algorithms and data structures"
+};
+
+let question3 = {
+  query: "What are efficient algorithms in the context of green coding?",
+  options: ["Algorithms with a low Big O notation complexity", "Algorithms which are color-coded green", "Algorithms only used in the creation of eco-friendly apps"], 
+  solution: "Algorithms with a low Big O notation complexity"
+};
+
+let question4 = {
+  query: "What is the benefit of optimizing code in context of green coding?",
+  options: ["It makes the code green in color", "It reduces the processing power needed, thus saving energy", "It contributes to the alleviation of the climate crisis purely by virtue of being 'optimized'"],
+  solution: "It reduces the processing power needed, thus saving energy"
+};
+
+let question5 = {
+  query: "Why is reducing data waste important in green coding?",
+  options: ["Because it clutters the code",  "Because it helps to minimize resource usage, thereby reducing environmental impact", "Because it saves only on storage costs"],
+  solution: "Because it helps to minimize resource usage, thereby reducing environmental impact"
+}; */
+
 // Array with questions
 let questions = [question1, question2, question3, question4, question5];
 
