@@ -1,5 +1,4 @@
 :root {
-  /* --green-dark: #209246; */
   --green-dark: #1D8640;
   --green-light: #d9f99d;
   --white: #fff;
@@ -75,10 +74,6 @@ header {
 }
 
 .text-box {
-  /* margin: 2rem;
-  margin-bottom: 10rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.4rem; */
   max-width: 450px;
   position: absolute;
   top: 55%;
