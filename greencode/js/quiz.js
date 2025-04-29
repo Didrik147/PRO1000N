@@ -1,7 +1,4 @@
-// TODO: Change all comments to English
-
 // The multiple choice quiz content was made using OpenAI's GTP-4 large language model
-
 let question1 = {
   query: "What is the primary goal of sustainable programming?",
   options: ["To minimize environmental impact", "To maximize speed", "To reduce programming errors"],
@@ -32,37 +29,6 @@ let question5 = {
   solution: "Centers with efficient cooling systems"
 };
 
-// The multiple choice quiz content was made using InnSpill
-/* let question1 = {
-  query: "What does it mean green coding or sustainable programming?",
-  options: ["Programming with green color coded themes", "Writing environmentally responsible code that minimizes energy consumption", "Creating code faster, resulting in a shorter greenspace or production time"],
-  solution: "Writing environmentally responsible code that minimizes energy consumption"
-};
-
-let question2 = {
-  query: "What affects energy efficiency in software development?",
-  options: ["The programming language used", "The design and implementation of the algorithms and data structures", "The choice of music the developer listens to while coding"],
-  solution: "The design and implementation of the algorithms and data structures"
-};
-
-let question3 = {
-  query: "What are efficient algorithms in the context of green coding?",
-  options: ["Algorithms with a low Big O notation complexity", "Algorithms which are color-coded green", "Algorithms only used in the creation of eco-friendly apps"], 
-  solution: "Algorithms with a low Big O notation complexity"
-};
-
-let question4 = {
-  query: "What is the benefit of optimizing code in context of green coding?",
-  options: ["It makes the code green in color", "It reduces the processing power needed, thus saving energy", "It contributes to the alleviation of the climate crisis purely by virtue of being 'optimized'"],
-  solution: "It reduces the processing power needed, thus saving energy"
-};
-
-let question5 = {
-  query: "Why is reducing data waste important in green coding?",
-  options: ["Because it clutters the code",  "Because it helps to minimize resource usage, thereby reducing environmental impact", "Because it saves only on storage costs"],
-  solution: "Because it helps to minimize resource usage, thereby reducing environmental impact"
-}; */
-
 // Array with questions
 let questions = [question1, question2, question3, question4, question5];
 
@@ -92,38 +58,25 @@ function getQuestions() {
       </fieldset>
       `
 
-    // Henter elementet alternativene skal skrives i
     let questionEl = document.getElementById(`question${i + 1}`)
-    //let questionEl = document.querySelector(`#question${i+1}`)
 
-    // Går gjennom alternativene
     for (let j = 0; j < options.length; j++) {
-      // Lager label element
       let labelEl = document.createElement('label')
-
-      // Lager et input element
       let radioEl = document.createElement('input')
-
-      // Setter typen til input elementet til radio
       radioEl.type = "radio"
 
-      // Sørger for at alle alternativene til spørsmålet er i samme gruppe
       radioEl.name = `q${i + 1}`
 
-      // Setter verdi til elementet basert på om alternativet er lik fasiten
       if (options[j] === solution) {
         radioEl.value = "c" // correct
       } else {
         radioEl.value = "w" // wrong
       }
 
-      // Legger input-elementet med type radio i label elementet
       labelEl.appendChild(radioEl)
 
-      // Skriver alternativene til HTML
       labelEl.innerHTML += options[j]
 
-      // Legger label elementet inni question elementet
       questionEl.appendChild(labelEl)
     }
   }
@@ -131,7 +84,7 @@ function getQuestions() {
 
 getQuestions()
 
-// Checking number of answers correct
+// Checking which answers are correct
 checkBtn.addEventListener('click', checkAnswers)
 
 function checkAnswers() {
@@ -140,14 +93,13 @@ function checkAnswers() {
 
   let points = 0
 
-  // Henter alle radio-elementene
+  // Get all radio-elements
   let radioEls = document.querySelectorAll('input[type="radio"]')
 
-  // Traverserer radio-elementene
+  // Traverse radio-elements
   for (let i = 0; i < radioEls.length; i++) {
-    // Sjekker om alternativet er krysset av
     if (radioEls[i].checked) {
-      // Sjekker om alternativet er korrekt
+      // Checking if the alternative is correct
       if (radioEls[i].value === "c") {
         radioEls[i].parentElement.classList.add('correct')
         points++
@@ -156,10 +108,9 @@ function checkAnswers() {
       }
     }
 
-    // Gjør slik at man ikke kan trykke på radioknappene lenger
     radioEls[i].disabled = true
   }
 
-  // Skriver til resultat-elementet
+  // Show the results
   resultEl.innerHTML = `You got ${points}/${questions.length} points`
 }
