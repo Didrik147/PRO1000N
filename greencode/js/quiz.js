@@ -87,9 +87,9 @@ function getQuestions() {
 
     // Fill quiz container with question
     quizContainerEl.innerHTML += `
-      <div class="question-container" id="question${i + 1}">
-        <h2 class="text-lg font-semibold my-2">${i + 1}. ${query}</h2>
-      </div>
+      <fieldset class="question-container" id="question${i + 1}">
+        <legend class="text-lg font-semibold my-2">${i + 1}. ${query}</legend>
+      </fieldset>
       `
 
     // Henter elementet alternativene skal skrives i

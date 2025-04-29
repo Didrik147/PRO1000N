@@ -286,3 +286,7 @@ footer a {
 .wrong {
   background-color: lightcoral;
 }
+
+fieldset {
+  border: none;
+}
