@@ -1,0 +1,30 @@
+.question-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.question-container label {
+  /* margin: 0.4rem; */
+  padding: 0.4rem;
+  margin-left: 0.4rem;
+  border-radius: 0.2rem;
+  width: fit-content;
+}
+
+.question-container input[type='radio'] {
+  margin-right: 0.2rem;
+  filter: grayscale(100%);
+}
+
+.correct {
+  background-color: lightgreen;
+}
+.wrong {
+  background-color: lightcoral;
+}
+
+fieldset {
+  border: none;
+}
